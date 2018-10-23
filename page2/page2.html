@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+   
+  <head>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+   
+
+    <!-- Bootstrap core CSS -->
+    <link href="../node_modules/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../node_modules/css/cover.css" rel="stylesheet">
+   
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Student Info</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link " href="../index.html">Home</a>
+            <a class="nav-link active" href="#">Register</a>
+            <a class="nav-link" href="../Contact/Contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      
+       
+        <script LANGUAGE="JavaScript">
+        function getParams(){
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+            var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+            for (var i=0; i<pairs.length; i++){
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+            }
+            }
+            return params;
+            }
+            
+            params = getParams();
+            firstname = unescape(params["firstname"]);
+            lastname = unescape(params["lastname"]);
+            Email=unescape(params["Email"]);
+            Branch=unescape(params["Branch"]);
+            age = unescape(params["age"]);
+            document.write("firstname = " + firstname + "<br>");
+            document.write("lastname = " + lastname + "<br>");
+            document.write("Email = " + Email + "<br>");
+            document.write("Branch = " + Branch + "<br>");
+            document.write("age = " + age + "<br>");
+            document.write("Information submitted sucessfully");
+            
+           
+      
+        </script>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+       
+         <p>Student Portal Information Display</p>
+        </div>
+      </footer>
+    </div>
+
+
+   
+    <script src="../node_modules/jquery/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../node_modules/jquery/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </form>
+  </body>
+
+</html>
